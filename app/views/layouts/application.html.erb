@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestSocLog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+	  <link rel="icon" type="image/png" href="/assets/icons/favicon.png"/>
+  	<link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/iconic/css/material-design-iconic-font.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/linearicons-v1.0.0/icon-font.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/animate/animate.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/css-hamburgers/hamburgers.min.css">
+<!--
+  	<link rel="stylesheet" type="text/css" href="/assets/animsition/css/animsition.min.css">
+-->
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/select2/select2.min.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/daterangepicker/daterangepicker.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/MagnificPopup/magnific-popup.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/perfect-scrollbar/perfect-scrollbar.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/util.css">
+  	<link rel="stylesheet" type="text/css" href="/assets/main.css">
+    <% stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- CSS file
+		<link rel="stylesheet" type="text/css" href="/assets/easy-autocomplete.css">
+		<link rel="stylesheet" type="text/css" href="/assets/easy-autocomplete.themes.css">
+		-->
+  </head>
+
+  <body class="animsition">
+    <%= yield %>
+    <%= render 'layouts/alerts' %>
+		<!--
+		<script src="/assets/jquery.easy-autocomplete.js"></script>
+		-->
+  </body>
+</html>
